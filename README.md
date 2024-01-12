@@ -7,6 +7,7 @@ https://www.unknowncheats.me/forum/counter-strike-2-a/619124-cs2-external-cheat-
 
 you can find the compiled cheat on UC
 
+Screenshots
 https://prnt.sc/NmnlgHTiAXwY
 https://prnt.sc/mLYXH9G27od_
 https://prnt.sc/W88Jbq4lZ8Fj
