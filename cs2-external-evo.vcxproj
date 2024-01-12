@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{bfafcac4-25dc-492f-b22d-5d17fd3c41b8}</ProjectGuid>
+    <RootNamespace>cs2externalevo</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>unknowncheats</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>C:\Users\dutu\Desktop\cs2-external-fhook\fhook\thirdparty\freetype\include;C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\dutu\Desktop\cs2-external-fhook\fhook\thirdparty\freetype\objs;C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>C:\Users\segdg\Desktop\Neuer Ordner %282%29\fhook\thirdparty\freetype\include;C:\Users\Frezzy\Desktop\frezzyhook2 cs\fhook\thirdparty\freetype\include;C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\segdg\Desktop\Neuer Ordner %282%29\fhook\thirdparty\freetype\objs;C:\Users\Frezzy\Desktop\frezzyhook2 cs\fhook\thirdparty\freetype\objs;C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="fhook\core\ctx\ctx.hpp" />
+    <ClInclude Include="fhook\framework\config\cfg.hpp" />
+    <ClInclude Include="fhook\framework\framework.hpp" />
+    <ClInclude Include="fhook\hacks\ctx\hacks_ctx.hpp" />
+    <ClInclude Include="fhook\hacks\features\esp\esp.hpp" />
+    <ClInclude Include="fhook\hacks\features\flash_builder\flash_builder.hpp" />
+    <ClInclude Include="fhook\hacks\features\grenade\grenades.hpp" />
+    <ClInclude Include="fhook\hacks\features\legitbot\legitbot.hpp" />
+    <ClInclude Include="fhook\hacks\features\ragebot\ragebot.hpp" />
+    <ClInclude Include="fhook\hacks\features\shots\shots.hpp" />
+    <ClInclude Include="fhook\hacks\features\shots\shots_hitsound.hpp" />
+    <ClInclude Include="fhook\hacks\features\sound_system\sound.hpp" />
+    <ClInclude Include="fhook\hacks\features\triggerbot\triggerbot.hpp" />
+    <ClInclude Include="fhook\inc.hpp" />
+    <ClInclude Include="fhook\sdk\animation_system\animation_system.hpp" />
+    <ClInclude Include="fhook\sdk\classes\bone_system.hpp" />
+    <ClInclude Include="fhook\sdk\classes\entity.hpp" />
+    <ClInclude Include="fhook\sdk\classes\view.hpp" />
+    <ClInclude Include="fhook\sdk\input_system\input_system.hpp" />
+    <ClInclude Include="fhook\sdk\math\color_t.hpp" />
+    <ClInclude Include="fhook\sdk\math\rect_t.hpp" />
+    <ClInclude Include="fhook\sdk\math\str_t.hpp" />
+    <ClInclude Include="fhook\sdk\memory\mem.hpp" />
+    <ClInclude Include="fhook\sdk\offsets\offsets.hpp" />
+    <ClInclude Include="fhook\sdk\process_manager\process_manager.hpp" />
+    <ClInclude Include="fhook\sdk\render\render.hpp" />
+    <ClInclude Include="fhook\sdk\render\render_fonts.hpp" />
+    <ClInclude Include="fhook\sdk\render\render_sdk.hpp" />
+    <ClInclude Include="fhook\sdk\reverse\reversed_funcs.hpp" />
+    <ClInclude Include="fhook\thirdparty\bytes.hpp" />
+    <ClInclude Include="fhook\thirdparty\custom.hpp" />
+    <ClInclude Include="fhook\thirdparty\imconfig.h" />
+    <ClInclude Include="fhook\thirdparty\imgui.h" />
+    <ClInclude Include="fhook\thirdparty\imgui_freetype.h" />
+    <ClInclude Include="fhook\thirdparty\imgui_impl_dx11.h" />
+    <ClInclude Include="fhook\thirdparty\imgui_impl_dx9.h" />
+    <ClInclude Include="fhook\thirdparty\imgui_impl_win32.h" />
+    <ClInclude Include="fhook\thirdparty\imgui_internal.h" />
+    <ClInclude Include="fhook\thirdparty\imstb_rectpack.h" />
+    <ClInclude Include="fhook\thirdparty\imstb_textedit.h" />
+    <ClInclude Include="fhook\thirdparty\imstb_truetype.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="fhook\core\core.cpp" />
+    <ClCompile Include="fhook\core\ctx\ctx.cpp" />
+    <ClCompile Include="fhook\framework\config\cfg.cpp" />
+    <ClCompile Include="fhook\framework\framework.cpp" />
+    <ClCompile Include="fhook\hacks\ctx\hacks_ctx.cpp" />
+    <ClCompile Include="fhook\hacks\features\esp\esp.cpp" />
+    <ClCompile Include="fhook\hacks\features\flash_builder\flash_builder.cpp" />
+    <ClCompile Include="fhook\hacks\features\grenade\grenades.cpp" />
+    <ClCompile Include="fhook\hacks\features\legitbot\legitbot.cpp" />
+    <ClCompile Include="fhook\hacks\features\ragebot\ragebot.cpp" />
+    <ClCompile Include="fhook\hacks\features\shots\shots.cpp" />
+    <ClCompile Include="fhook\hacks\features\sound_system\sound.cpp" />
+    <ClCompile Include="fhook\hacks\features\triggerbot\triggerbot.cpp" />
+    <ClCompile Include="fhook\sdk\animation_system\animation_system.cpp" />
+    <ClCompile Include="fhook\sdk\input_system\input_system.cpp" />
+    <ClCompile Include="fhook\sdk\process_manager\process_manager.cpp" />
+    <ClCompile Include="fhook\sdk\render\render.cpp" />
+    <ClCompile Include="fhook\sdk\reverse\reversed_funcs.cpp" />
+    <ClCompile Include="fhook\thirdparty\custom.cpp" />
+    <ClCompile Include="fhook\thirdparty\imgui.cpp" />
+    <ClCompile Include="fhook\thirdparty\imgui_demo.cpp" />
+    <ClCompile Include="fhook\thirdparty\imgui_draw.cpp" />
+    <ClCompile Include="fhook\thirdparty\imgui_freetype.cpp" />
+    <ClCompile Include="fhook\thirdparty\imgui_impl_dx11.cpp" />
+    <ClCompile Include="fhook\thirdparty\imgui_impl_dx9.cpp" />
+    <ClCompile Include="fhook\thirdparty\imgui_impl_win32.cpp" />
+    <ClCompile Include="fhook\thirdparty\imgui_tables.cpp" />
+    <ClCompile Include="fhook\thirdparty\imgui_widgets.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
