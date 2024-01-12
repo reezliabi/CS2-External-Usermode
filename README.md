@@ -9,6 +9,5 @@ you can find the compiled cheat on UC
 
 Screenshots
 https://prnt.sc/NmnlgHTiAXwY
-https://prnt.sc/mLYXH9G27od_
 https://prnt.sc/W88Jbq4lZ8Fj
 https://prnt.sc/9aNByvQHNH0D
